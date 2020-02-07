@@ -5,9 +5,11 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import withAnalytics from '../src/hocs/withAnalytics';
+
 // import { Container } from './styles';
 
-export default function User({ users }) {
+function User({ users }) {
   return (
     <div>
       <Head>
@@ -37,3 +39,5 @@ User.getInitialProps = async () => {
 User.propTypes = {
   users: PropTypes.array.isRequired,
 };
+
+export default withAnalytics()(User);

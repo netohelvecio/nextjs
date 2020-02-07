@@ -3,9 +3,11 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import withAnalytics from '../src/hocs/withAnalytics';
+
 // import { Container } from './styles';
 
-export default function Home() {
+function Home() {
   return (
     <div>
       <Head>
@@ -17,3 +19,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default withAnalytics()(Home);
