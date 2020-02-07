@@ -13,6 +13,7 @@ function Home() {
       <Head>
         <title>Home</title>
       </Head>
+      <img src="/static/ftc.jpg" width="200" alt="UNIFTC" />
       <Link href="/users">
         <a>Usuários</a>
       </Link>
